@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>曹立 | 算法工程师</title>
+    <meta
+      name="description"
+      content="曹立 - 杭州电子科技大学硕士研究生，聚焦移动机械臂的环境感知与控制"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+
+    <header class="hero reveal delay-1" id="top">
+      <div class="hero-main">
+        <p class="kicker">Algorithm Engineer Candidate</p>
+
+        <h1>
+            曹立 
+        </h1>
+
+        <p>
+          <a href="https://github.com/RAS-caoli" target="_blank">
+            github主页
+          </a>
+        </p>
+
+        <img src="images/caoli.jpg" alt="caoli" width="295" height="295">
+      </div>
+      <div class="hero-side">
+        <ul class="contact-list">
+          <li><span>电话</span><a href="tel:18705721081">18705721081</a></li>
+          <li><span>邮箱</span><a href="mailto:caoli@outlook.at">caoli@outlook.at</a></li>
+          <li><span>地点</span><em>浙江杭州</em></li>
+          <li><span>研究方向</span><em>移动机械臂的环境感知与控制</em></li>
+          <li><span>求职方向</span><em>算法工程师</em></li>
+        </ul>
+      </div>
+    </header>
+
+    <nav class="nav reveal delay-2">
+      <a href="#education">教育背景</a>
+      <a href="#project">项目经历</a>
+      <a href="#awards">竞赛经历</a>
+      <a href="#skills">专业技能</a>
+    </nav>
+
+    <main>
+      <section class="panel reveal delay-2" id="education">
+        <h2>教育背景</h2>
+        <div class="timeline">
+          <article>
+            <div class="time">2024.09 - 至今</div>
+            <div>
+              <h3>杭州电子科技大学 · 控制工程（硕士在读）</h3>
+            </div>
+          </article>
+          <article>
+            <div class="time">2020.09 - 2024.06</div>
+            <div>
+              <h3>浙江水利水电学院 · 自动化</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal delay-4" id="project">
+        <h2>项目经历</h2>
+
+        <div class="timeline">
+          <article>
+            <div class="time">2024.06 - 至今</div>
+            <div>
+              <h3>复杂农牧场景下的剪羊毛机器人系统研发，企业技术攻关项目</h3>
+              <ul>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:5px; margin-bottom:1px;">项目简介：</h3>
+                <li>
+                  本项目面向非结构化牧场环境中的剪羊毛任务，旨在构建融合视觉感知、语言任务建模与力反馈控制的具身智能系统，探索从多模态输入到机器人精密操作的端到端建模范式。系统以视觉观测、任务语义信息及机器人状态为输入，通过扩散模型输出连续动作序列，实现剪毛刀具在羊体复杂曲面上的安全、精准与柔顺运动，从而提升自动化剪毛作业的稳定性与泛化能力。
+                </li>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:10px; margin-bottom:1px;">项目负责部分：</h3>               
+                <li>
+                  基于搭载深度相机的移动机械臂对目标进行多视角点云数据采集，结合外参标定实现点云拼接与羊体三维重建，提取曲面法向量、曲率等几何特征，构建结构化场景表示，为策略学习提供高质量观测输入。
+                </li>
+                <li>
+                  针对羊体非规则曲面，设计基于曲面约束的刀具轨迹生成方法（NURBS 曲线建模），实现连续、平滑的剪毛路径规划，将传统轨迹规划问题重构为可学习的动作序列建模问题（action chunk），为后续策略学习提供监督数据。
+                </li>
+                <li>
+                  构建视觉伺服与力反馈融合控制系统，在剪毛接触过程中实时感知接触力变化，动态调整刀具运动，实现对软体目标的柔顺控制；提升复杂接触任务下的操作安全性与稳定性。
+                </li>   
+                <li>
+                  构建包含视觉观测（RGB-D/点云）、机器人状态、力传感器数据及动作轨迹的多模态数据集，完成多源数据时间同步、轨迹平滑与归一化处理，形成符合 VLA 训练范式的高质量数据，为模仿学习与生成式策略模型 Diffusion Policy 提供数据支撑。
+                </li>
+                <li>
+                  探索基于模仿学习与生成模型的动作策略学习方法，实现从视觉观测到连续动作序列的映射，并对比传统规划方法与学习策略在复杂曲面操作任务中的性能差异，验证 VLA 方法在接触密集型任务中的应用潜力。
+                </li>  
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:10px; margin-bottom:5px;">展示视频：</h3>                        
+                <img src="images/image_0.gif" alt="image_0" width="752" height="423">                 
+              </ul>
+            </div>
+          </article>
+        </div>
+ 
+        <div class="timeline">
+          <article>
+            <div class="time">2024.06 - 2025.12</div>
+            <div>
+              <h3>基于机器视觉的汽车喷涂定位技术，企业技术攻关项目</h3>
+              <ul>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:5px; margin-bottom:1px;">项目简介：</h3>
+                <li>
+                  本项目旨在构建一种符合复杂大型车门表面的喷涂轨迹，具体包括：移动机械臂平台搭建，车门三维模型重建，待喷涂区域的识别与测量，点云去噪与空洞填补，基于特征点的喷涂轨迹生成与优化。
+                </li>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:10px; margin-bottom:1px;">项目负责部分：</h3>               
+                <li>
+                  针对远距离深度数据的误差问题，基于搭载深度相机的移动机械臂平台，近距离多视角采集车门点云数据，并基于自主标定的机械臂外参矩阵实现点云拼接，完成车门的三维重建。
+                </li>
+                <li>
+                  针对点云拼接后存在的空洞、噪点问题，改进体素滤波、RANSAC 拟合和 MLS 上采样等算法，有效去除噪点，平滑车门三维模型。
+                </li>
+                <li>
+                  针对机械臂关节轨迹跳变问题，通过约束关节差值，引入 NURBS 进一步优化喷涂轨迹。
+                </li>   
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:10px; margin-bottom:5px;">展示视频：</h3>                        
+                <img src="images/image_1.gif" alt="image_1" width="752" height="423">                 
+              </ul>
+            </div>
+          </article>
+        </div>
+ 
+        <div class="timeline">
+          <article>
+            <div class="time">2023.06 - 2025.06</div>
+            <div>
+              <h3>刚-柔-软一体化护理机器人的环境感知与控制技术研究，省属高校重点项目</h3>
+              <ul>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:5px; margin-bottom:1px;">项目简介：</h3>      
+                <li>
+                  本项目基于自主搭建的移动机械臂平台以及多源人机交互系统，通过用户表情、头势等信息控制机器人在动态、非结构化的家庭环境中完成自主拿取物品、拉抽屉等一系列助老助残服务性功能。
+                </li>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:10px; margin-bottom:1px;">项目负责部分：</h3>                     
+                <li>
+                  负责机器人的自主导航与避障。部署 cartographer 算法进行室内二维地图的构建，利用改进 A* 和 DWA 进行路径规划，结合视觉伺服进行 S 型速度曲线控制，在非结构化的养老院实现稳定导航和避障。
+                </li>
+                <li>
+                  负责机械臂运动规划。基于深度视觉实现目标的抓取姿态估计，基于 OMPL 实现抓取轨迹优化。
+                </li>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:10px; margin-bottom:5px;">展示视频：</h3>                        
+                <img src="images/image_2.gif" alt="image_2" width="752" height="423">                     
+              </ul>
+            </div>
+          </article>
+        </div>
+              
+        <div class="timeline">
+          <article>
+            <div class="time">2023.06 - 2025.06</div>
+            <div>
+              <h3>复杂场景下的运输机器人导航与规划技术研发，企业技术攻关项目</h3>
+              <ul>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:5px; margin-bottom:1px;">项目简介：</h3>     
+                <li>
+                  本项目旨在开发一套室内外复杂运维环境下大型运输车的定位与导航系统，包括：多传感器数据融合、主动感知定位、高精地图构建、路径规划与导航等。
+                </li>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:10px; margin-bottom:1px;">项目负责部分：</h3>                      
+                <li>
+                  负责改进并优化 Pure Pursuit 算法，根据阿克曼底盘运动学模型实现车辆对预设轨迹的跟踪。
+                </li>
+                <li>
+                  针对工业园区内的复杂运维场景，利用 B 样条曲线和改进 A* 算法优化全局路径，提高路径质量。
+                </li>
+                <h3 style="color: rgb(198, 102, 102);line-height:1.5;margin-top:10px; margin-bottom:5px;">展示视频：</h3>                     
+                <img src="images/image_3.gif" alt="image_3" width="752" height="423">                
+              </ul>
+            </div>
+          </article>
+        </div>        
+    
+      </section>
+
+      <section class="panel two-col reveal delay-4">
+        <div id="awards">
+          <h2>竞赛经历</h2>
+          <ul class="compact-list">
+            
+            <li>
+              <a href="images/第七届中国研究生机器人创新设计大赛全国三等奖.jpg" target="_blank">
+                第七届中国研究生机器人创新设计大赛 · 全国三等奖（2025.09）
+              </a>
+            </li>
+        
+            <li>
+              <a href="images/第六届中国研究生机器人创新设计大赛全国三等奖.jpg" target="_blank">
+                第六届中国研究生机器人创新设计大赛 · 全国三等奖（2024.10）
+              </a>
+            </li>
+        
+            <li>
+              <a href="images/2024年浙江省第八届大学生机器人竞赛二等奖.jpg" target="_blank">
+                2024 年浙江省第八届大学生机器人竞赛 · 二等奖（2024.05）
+              </a>
+            </li>
+        
+            <li>
+              <a href="images/2023年TI杯全国大学生电子设计竞赛浙江赛区二等奖.jpg" target="_blank">
+                2023 年 TI 杯全国大学生电子设计竞赛 · 浙江赛区二等奖（2023.08）
+              </a>
+            </li>
+        
+            <li>
+              <a href="images/2023年浙江省第七届大学生机器人竞赛三等奖.jpg" target="_blank">
+                2023 年浙江省第七届大学生机器人竞赛 · 三等奖（2023.05）
+              </a>
+            </li>
+        
+            <li>
+              <a href="images/2023年第九届浙江省工程实践与创新能力大赛二等奖.jpg" target="_blank">
+                2023 年第九届浙江省工程实践与创新能力大赛 · 二等奖（2023.04）
+              </a>
+            </li>
+        
+            <li>
+              <a href="images/2021年第十三届全国大学生数学竞赛三等奖.jpg" target="_blank">
+                2021 年第十三届全国大学生数学竞赛 · 三等奖（2021.12）
+              </a>
+            </li>
+        
+            <li>
+              <a href="images/2021年浙江省大学生高等数学竞赛三等奖.jpg" target="_blank">
+                2021 年浙江省大学生高等数学竞赛 · 三等奖（2021.06）
+              </a>
+            </li>
+        
+          </ul>
+        </div>
+        <div id="skills">
+          <h2>专业技能</h2>
+          <div class="tags">
+            <span>ROS</span>
+            <span>ROS2</span>
+            <span>Linux</span>
+            <span>C</span>            
+            <span>C++</span>
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>PCL</span>
+            <span>Moveit!</span>
+            <span>OMPL</span>
+            <span>Gazebo</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="reveal delay-4">
+      <a href="#top">返回顶部</a>
+      <p>© 曹立 · Last updated 2026</p>
+    </footer>
+  </body>
+</html>
